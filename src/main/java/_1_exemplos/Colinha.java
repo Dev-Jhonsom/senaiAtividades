@@ -18,7 +18,7 @@ public class Colinha {
          * Scanner sc (nextLint , next , close , nextInt, nextDouble)
          * javax.swing.JFrame frame = new javax.swing.JFrame();
          *         frame.setAlwaysOnTop(true);
-         * javax.swing.JOption.showMenssageDialog(parentComponent: null,
+         * javax.swing.JOption.showMenssageDialog(parentComponent: frame,
          >>>>não precisa escrever message:"Reposta Do sistema",
          >>>>não precisa escrever title:"Question",
          javax.swing.JOptionPane.QUESTION_MESSAGE)
