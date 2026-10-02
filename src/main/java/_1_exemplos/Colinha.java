@@ -16,6 +16,8 @@ public class Colinha {
          * Double - Varoavel com casas decimais/ponto flutuante
          * Locale.setDefault(Locale.US); - Para transformar o numero do formato brasileiro para o formato americano
          * Scanner sc (nextLint , next , close , nextInt, nextDouble)
+         * System.exit(0); // <--- Finaliza o programa e encerra a EDT
+         * frame.dispose(); // <--- Libera os recursos do JFrame e permite que a thread termine
          * javax.swing.JFrame frame = new javax.swing.JFrame();
          *         frame.setAlwaysOnTop(true);
          * javax.swing.JOption.showMenssageDialog(parentComponent: frame,

@@ -24,7 +24,7 @@ public class CalculadoraDeDescontos {
             resultado = valorC - (valorC * 0.10);
 
         } else {
-            resultado = valorC - (valorC * 0.15);
+            resultado =  valorC - (valorC * 0.15);
 
         }
 
@@ -38,6 +38,7 @@ public class CalculadoraDeDescontos {
                 JOptionPane.QUESTION_MESSAGE);
 
         sc.close();
+        frame.dispose();
     }
 
 }

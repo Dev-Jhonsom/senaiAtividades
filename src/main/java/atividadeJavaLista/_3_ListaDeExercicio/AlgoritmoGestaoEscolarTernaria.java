@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class AlgoritmoGestaoEscolar {
+public class AlgoritmoGestaoEscolarTernaria {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -19,33 +19,19 @@ public class AlgoritmoGestaoEscolar {
         double atividade = sc.nextDouble();
 
         double notaF = ((prova * pesoP + atividade * pesoA) / (pesoP + pesoA));
-
-        if (notaF >= 6) {
-
-
-            javax.swing.JFrame frame = new javax.swing.JFrame();
-            frame.setAlwaysOnTop(true);
-            javax.swing.JOptionPane.showMessageDialog(frame,
-                    "Aprovado!",
-                    "Atividade 1",
-
-
-                    JOptionPane.QUESTION_MESSAGE);
-        } else {
-
-            javax.swing.JFrame frame = new javax.swing.JFrame();
-            frame.setAlwaysOnTop(true);
-            javax.swing.JOptionPane.showMessageDialog(frame,
-                    "Reprovado!",
-                    "Atividade 1",
-
-
-                    JOptionPane.QUESTION_MESSAGE);
-
-        }
-
+        
+        
+        String resultado = (notaF > 6) ? "Aprovado!" : "Reprovado!";
+        
         javax.swing.JFrame frame = new javax.swing.JFrame();
         frame.setAlwaysOnTop(true);
+        javax.swing.JOptionPane.showMessageDialog(frame,
+                resultado,
+                "Atividade 1",
+                
+                
+                JOptionPane.QUESTION_MESSAGE);
+        
         javax.swing.JOptionPane.showMessageDialog(frame,
                 "A nota final do aluno é: " + notaF,
                 "Atividade 1",
