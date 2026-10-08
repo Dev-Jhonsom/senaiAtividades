@@ -23,7 +23,16 @@ public class Colinha {
          * javax.swing.JOption.showMenssageDialog(parentComponent: frame,
          >>>>não precisa escrever message:"Reposta Do sistema",
          >>>>não precisa escrever title:"Question",
-         javax.swing.JOptionPane.QUESTION_MESSAGE)
+         javax.swing.JOptionPane.QUESTION_MESSAGE),
+         *
+         *
+         * int x = sc.nextInt();
+         * 		int soma = 0;
+         * 		while (soma != 0) { //enquanto soma for diferente de zero
+         * 			soma += x; // neste pedaço estou pegando o que esta sendo digitado pelo usuario
+         * 			x = sc.nextInt(); //Assim que o usuario digitar 0 ele salta do while direto
+         *
+         *
          */
 
 
