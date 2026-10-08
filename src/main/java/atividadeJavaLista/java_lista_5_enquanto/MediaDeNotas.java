@@ -15,7 +15,7 @@ public class MediaDeNotas {
 		int contador = 1;
 		double somaNota = 0;
 		
-		while (contador < 5){
+		while (contador <= 5){
 			System.out.println("Informe a nota" + contador);
 			double nota = sc.nextDouble();
 			
