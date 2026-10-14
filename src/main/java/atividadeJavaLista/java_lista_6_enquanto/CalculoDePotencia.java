@@ -8,32 +8,37 @@ public class CalculoDePotencia {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		javax.swing.JFrame frame = new javax.swing.JFrame();
+		JFrame frame = new JFrame();
 		frame.setAlwaysOnTop(true);
 		
-		int contador = -1;
-		double base = 0;
-		double expoente = 0 ;
-		double resultado = Math.pow(base,expoente);
+		int contador = 1;
+		int base ;
+		int expoente ;
+		
+		System.out.println("Informe um numero para base");
+		base = sc.nextInt();
+		
+		System.out.println("Informe um expoente");
+		expoente = sc.nextInt();
+		
+		int soma = base;
 		
 		while (contador != expoente){
+			System.out.println("Loop " + contador);
 			
-			System.out.println("Informe um numero para base");
-			base = sc.nextInt();
+			System.out.println("Vai fazer: soma = " + soma + " * " + base );
+			soma = soma * base ;
+			System.out.println("soma atual: " + soma);
 			
-			System.out.println("Informe um expoente");
-			expoente = sc.nextInt();
-			
-			javax.swing.JOptionPane.showMessageDialog(frame,
-					"Potência" + base + expoente + "=" + resultado,
-					"Atividade 3",
-					
-					
-					JOptionPane.QUESTION_MESSAGE);
-		
-			
-			
+			 contador ++;
 		}
+		
+		JOptionPane.showMessageDialog(frame,
+				"Potência " +  base + " ^ " +  expoente + " = " + soma,
+				"Atividade 3",
+				
+				
+				JOptionPane.QUESTION_MESSAGE);
 		
 	}
 }
