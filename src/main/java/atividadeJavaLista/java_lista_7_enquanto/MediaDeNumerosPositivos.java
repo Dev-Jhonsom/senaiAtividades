@@ -23,8 +23,7 @@ public class MediaDeNumerosPositivos {
 			if (numero >= 0) {
 				soma += numero;
 				contador++;
-			}
-			else {
+			} else {
 				JOptionPane.showMessageDialog(
 						frame,
 						"Interrompendo",
@@ -40,23 +39,6 @@ public class MediaDeNumerosPositivos {
 				"Atividade 4",
 				JOptionPane.QUESTION_MESSAGE
 		);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		sc.close();

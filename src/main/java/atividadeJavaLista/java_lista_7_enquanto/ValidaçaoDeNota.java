@@ -15,17 +15,18 @@ public class ValidaçaoDeNota {
 		System.out.println("Informe uma nota");
 		double nota = sc.nextDouble();
 		
-		while (nota > 0 || nota < 10){
+		while (nota < 0 || nota > 10){
 			System.out.print("Valor inválido. Introduza uma nota entre 0 e 10: ");
 			
 			nota = sc.nextDouble();
 			
-			JOptionPane.showMessageDialog(frame,
-					"Nota Valida " + nota,
-					"Exercicio 11",
-					JOptionPane.QUESTION_MESSAGE);
-			
 		}
+		
+		JOptionPane.showMessageDialog(frame,
+				"Nota Valida " + nota,
+				"Exercicio 14",
+				JOptionPane.QUESTION_MESSAGE);
+		
 		sc.close();
 		frame.dispose();
 	}
